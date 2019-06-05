@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.172-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.QuotationController">
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" spacing="5.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </BorderPane.margin>
+         <children>
+            <TextField fx:id="searchField" prefHeight="38.0" prefWidth="590.0" promptText="Название валюты или аббревиатура">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <ListView fx:id="valuteListView" VBox.vgrow="ALWAYS" />
+         </children>
+      </VBox>
+   </center>
+   <top>
+      <VBox spacing="2.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets left="5.0" right="5.0" top="5.0" />
+         </BorderPane.margin>
+         <children>
+            <Text fx:id="title" fill="#000000a0" strokeType="OUTSIDE" strokeWidth="0.0" text="Курс валют">
+               <font>
+                  <Font size="24.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="5.0" />
+               </VBox.margin>
+            </Text>
+            <VBox fx:id="favValutesContainer" style="-fx-border-color: #CCC; -fx-border-radius: 2;" />
+         </children>
+      </VBox>
+   </top>
+   <bottom>
+      <HBox alignment="CENTER_LEFT" prefHeight="11.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <BorderPane.margin>
+            <Insets left="5.0" />
+         </BorderPane.margin>
+         <children>
+            <Label alignment="CENTER" text="Курс валют предоставлен " />
+            <Hyperlink fx:id="cbrLink" onAction="#openLink" prefHeight="12.0" prefWidth="205.0" text="Центральным Банком России" />
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>
