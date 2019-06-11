@@ -90,7 +90,7 @@ public class Main extends Application {
         setAnchors(quotationNode, 0d);
         mainScreenController.getQuotationPane().getChildren().add(quotationNode);
 
-        primaryStage.setTitle("Валюта");
+        primaryStage.setTitle("Курсы валют");
         primaryStage.setScene(new Scene(mainScreenNode, 900, 610));
         primaryStage.sizeToScene();
         primaryStage.getIcons().add(

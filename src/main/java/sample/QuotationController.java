@@ -143,9 +143,6 @@ public class QuotationController {
                         favValutes[1].getNode(),
                         favValutes[2].getNode()
                 ));
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-        });
+            } catch (IOException e) { e.printStackTrace();}       });
     }
 }

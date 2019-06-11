@@ -116,6 +116,8 @@ public class CalculatorController {
     private Label valuteLabel3;
 
     @FXML
+    //Так как в ЦБ России разработчики назвали валюту valute,
+    // было принято решение соответствовать api и использовать их наименование.
     private void valuteButtonClick(MouseEvent event) {
         Button clickedButton = (Button) event.getSource();
         CbrValute chosenValute = ValutePickerController.showValutePicker(

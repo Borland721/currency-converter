@@ -100,7 +100,7 @@ public class ChartsController {
                     LocalDate minDate = LocalDate.of(1992, 7, 1);
                     if (item.isBefore(minDate) || item.isAfter(LocalDate.now())) {
                         setDisable(true);
-                        setStyle("-fx-background-color: #ffc0cb;"); //To set background on different color
+                        setStyle("-fx-background-color: #ffc0cb;");
                     }
                 }
             });

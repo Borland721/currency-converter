@@ -11,8 +11,7 @@ import java.nio.channels.FileChannel;
 import java.nio.channels.ReadableByteChannel;
 
 public class FileLoader {
-    //попытается скачать файл из Интернета, если не получится, попытается загрузить
-    //ранее скачанный старый файл, если такой есть и вернет его. Иначе вернет null
+
     public File load(String link, String filename) {
         File xmlFile = downloadFromWeb(link, filename);
         if (xmlFile == null) {
